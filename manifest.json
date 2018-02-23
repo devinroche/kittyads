@@ -1,0 +1,16 @@
+{
+    "manifest_version": 2,
+    "name": "kitads",
+    "version": "2.0",
+    "description": "Replace ads on reddit with pictures of kittens!",
+    "browser_action": {
+      "name": "Kitty Ads",
+      "icons": ["icon.png"],
+      "default_icon": "icon.png",
+      "default_popup": "popup.html"
+    },
+    "content_scripts": [ {
+      "js": [ "jquery.min.js", "popup.js" ],
+      "matches": [ "http://*/*", "https://*/*"]
+    }]
+  }
